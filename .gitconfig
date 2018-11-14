@@ -1,0 +1,33 @@
+[push]
+    default = matching
+[user]
+    name = Ihor
+    email = ihorgorobets@gmail.com
+[color]
+    ui = true
+[alias]
+    c = commit -m 
+    aa = add .
+    a = add 
+    p = push 
+    br = branch
+    co = checkout
+    st = status
+    rm = remove
+    df = diff
+    lp = log -p
+    com = checkout master
+
+    removeuntracked = clean -f -d
+    removeuncommited = checkout -- .
+    recommitname =  commit --amend -m 
+
+    unstash = stash save --keep-index
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+    lggraph = log --graph --pretty=short
+    lgdate = log --pretty=format:"%h - %an, %ar : %s"
+[core]
+    excludesfile = /home/ihor/.gitignore_global
+    quotepath = false
+[credential]
+    helper = cache --timeout=36000

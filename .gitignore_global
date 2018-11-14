@@ -1,0 +1,8 @@
+*.pyc
+*.db
+*.sqlite
+*.logs
+settings_local.py
+.idea
+.DS_Store
+__pycache__/
