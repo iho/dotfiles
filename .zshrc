@@ -23,3 +23,7 @@ alias g="git"
 
 autoload -U compinit promptinit
 zstyle ':completion::complete:*' use-cache 1
+
+
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
