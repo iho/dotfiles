@@ -24,6 +24,10 @@ curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer 
 
 curl https://sh.rustup.rs -sSf | sh
 
+# cargo install ripgrep
+# https://github.com/ryanoasis/nerd-fonts#option-2-release-archive-download
+# https://github.com/Mayccoll/Gogh
+
 # docker 
 sudo apt-get remove docker docker-engine docker.io
 sudo apt-get install -y \
