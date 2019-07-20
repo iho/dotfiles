@@ -1,0 +1,8 @@
+[ui]
+username = Ihor Horobets <i.horobets@advant.com.ua>
+[extensions]
+shelve=
+strip=
+purge=
+prompt=/home/ihor/.local/prompt.py
+ignore = ~/.globalhgignore
