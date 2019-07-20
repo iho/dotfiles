@@ -53,6 +53,8 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
+cd /home/ihor/.local/
+wget https://bitbucket.org/sjl/hg-prompt/raw/0850e9a3c68bf68a2a2ed5388eac22e547176b2a/prompt.py
 
 # TODO 
 # go
