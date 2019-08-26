@@ -1,0 +1,8 @@
+```
+iptables --policy INPUT DROP
+iptables --policy FORWARD DROP
+iptables --policy OUTPUT ACCEPT
+iptables --append INPUT --match state --state ESTABLISHED,RELATED --jump ACCEPT
+iptables --append INPUT --jump REJECT
+iptables --append FORWARD --jump REJECT
+```
