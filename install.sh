@@ -6,7 +6,7 @@ setxkbmap -layout "us, ua"
 
 echo "ihor ALL=(ALL) NOPASSWD: ALL" | sudo tee --append /etc/sudoers
 
-sudo apt-get install -y chromium-browser qbittorrent htop wget git tmux vim-gnome zsh axel silversearcher-ag ripgrep 
+sudo apt-get install -y chromium-browser qbittorrent htop wget git tmux vim-gnome zsh axel ripgrep 
 
 # vim
 sudo apt-get install -y exuberant-ctags 
