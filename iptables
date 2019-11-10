@@ -4,3 +4,5 @@ iptables --policy OUTPUT ACCEPT
 iptables --append INPUT --match state --state ESTABLISHED,RELATED --jump ACCEPT
 iptables --append INPUT --jump REJECT
 iptables --append FORWARD --jump REJECT
+iptables -I INPUT -p tcp -m tcp --dport 9999 -j ACCEPT
+iptables -I INPUT -p tcp -m tcp --dport 8999 -j ACCEPT
