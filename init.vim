@@ -27,6 +27,8 @@ Plug 'inside/vim-search-pulse'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'ehamberg/vim-cute-python', {'branch': 'moresymbols'}
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'mattn/emmet-vim'
 Plug 'joshdick/onedark.vim'
 Plug 'lilydjwg/colorizer'
@@ -35,7 +37,6 @@ Plug 'lilydjwg/colorizer'
 Plug 'editorconfig/editorconfig-vim'
 " Track the engine.
 Plug 'SirVer/ultisnips'
-
 " Snippets are separated from the engine. Add this if you want them:
 Plug 'honza/vim-snippets'
  "Initialize plugin system
