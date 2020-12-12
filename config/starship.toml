@@ -1,0 +1,68 @@
+add_newline = false
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]
+symbol = "λ"
+error_symbol = "✗"
+use_symbol_for_status = true
+
+[python]
+symbol = "👾 "
+pyenv_version_name = true
+pyenv_prefix = "[pyenv] "
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+prompt_order = [
+    "username",
+    "hostname",
+    "kubernetes",
+    "directory",
+    "git_branch",
+    "git_state",
+    "git_status",
+    "package",
+    "golang",
+    "nodejs",
+    "python",
+    "rust",
+    "nix_shell",
+    "conda",
+    "memory_usage",
+    "aws",
+    "env_var",
+    "cmd_duration",
+    "line_break",
+    "jobs",
+    "battery",
+    "time",
+    "character",
+]
+
+[time]
+disabled = false
+format = "[ %T ]"
+utc_time_offset = -5
+
+
+
+
+[git_status]
+enabled = true
+# conflicted = "🏳"
+# ahead = "🏎💨"
+# behind = "😰"
+# diverged = "😵"
+# untracked = "🤷‍"
+# stashed = "📦"
+# modified = "📝"
+# staged.value = "++"
+# staged.style = "green"
+# staged_count.enabled = true
+# deleted_count.enabled = true
+modified_count.enabled = true
+# untracked_count.enabled = true
+# staged_count.style = "green"
+# renamed = "👅"
+# deleted = "🗑"

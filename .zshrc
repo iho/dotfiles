@@ -27,17 +27,16 @@ plugins=(
   extract
 
   cargo
-  # go
-  # golang
-  # docker
-  # docker-compose
-  # kubectl
-  # kube-ps1
+  go
+  golang
+  docker
+  docker-compose
+  kubectl
+  kube-ps1
   tmux
   django
   wakatime
   git
-  mercurial
   vi-mode
 )
 
@@ -55,16 +54,19 @@ export PATH=$PATH:/home/ihor/bin
 
 alias fl='hg diff --git | flake8 --diff'
 alias g="git"
-alias h="hg"
-
-hco(){
-    hg co $(hg branches --quiet | fzf -m)
-}
-
 
 autoload -U compinit promptinit
 zstyle ':completion::complete:*' use-cache 1
 
-
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-config config --local status.showUntrackedFiles no
+export GTK_USE_PORTAL=1 
+bindkey "^[OB" down-line-or-search
+bindkey "^[OC" forward-char
+bindkey "^[OD" backward-char
+bindkey "^[OF" end-of-line
+bindkey "^[OH" beginning-of-line
+bindkey "^[[1~" beginning-of-line
+bindkey "^[[3~" delete-char
+bindkey "^[[4~" end-of-line
+bindkey "^[[5~" up-line-or-history
+bindkey "^[[6~" down-line-or-history
+bindkey "^?" backward-delete-char
