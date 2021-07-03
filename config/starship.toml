@@ -1,15 +1,26 @@
 add_newline = false
 
 # Replace the "❯" symbol in the prompt with "➜"
-[character]
-symbol = "λ"
-error_symbol = "✗"
-use_symbol_for_status = true
 
 [python]
 symbol = "👾 "
 pyenv_version_name = true
 pyenv_prefix = "[pyenv] "
+
+[cmd_duration]
+min_time = 2
+
+[directory]
+truncation_length = 8
+truncation_symbol = "…/"
+
+[docker_context]
+disabled = false
+[kubernetes]
+disabled = false
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"
+
 
 # Disable the package module, hiding it from the prompt completely
 [package]
@@ -42,14 +53,21 @@ prompt_order = [
 
 [time]
 disabled = false
-format = "[ %T ]"
+# format = "[ %T ]"
 utc_time_offset = -5
 
-
-
-
+[git_branch]
+disabled = false
 [git_status]
-enabled = true
+disabled = false
+[git_commit]
+disabled = false
+[git_state]
+disabled = false
+
+
+
+
 # conflicted = "🏳"
 # ahead = "🏎💨"
 # behind = "😰"
@@ -61,7 +79,7 @@ enabled = true
 # staged.style = "green"
 # staged_count.enabled = true
 # deleted_count.enabled = true
-modified_count.enabled = true
+# modified_count.enabled = true
 # untracked_count.enabled = true
 # staged_count.style = "green"
 # renamed = "👅"
