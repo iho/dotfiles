@@ -1,8 +1,11 @@
-[push]
-    default = matching
 [user]
+#    signingkey = 
     name = Ihor Horobets
     email = ihor@horobets.me
+[commit]
+    gpgsign = true
+[push]
+    default = matching
 [color]
     ui = true
 [alias]
