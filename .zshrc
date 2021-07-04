@@ -129,13 +129,13 @@ source $HOME/.cargo/env
 export PATH=$PATH:/home/ihor/bin
 
 function dota_on(){
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal ""
-	gsettings set org.gnome.desktop.input-sources xkb-options ""
+    gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+    gsettings set org.gnome.desktop.input-sources xkb-options "['']"
 }
 
 function dota_off(){
-	gsettings set org.gnome.desktop.input-sources xkb-options "['grp:caps_toggle']"
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['F1']"
+    gsettings set org.gnome.desktop.input-sources xkb-options "['grp:caps_toggle']"
+    gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['F1']"
 }
 
 alias k="kubectl"
