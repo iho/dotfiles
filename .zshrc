@@ -128,7 +128,19 @@ export GOPATH=$HOME/go
 source $HOME/.cargo/env
 export PATH=$PATH:/home/ihor/bin
 
+function dota_on(){
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal ""
+	gsettings set org.gnome.desktop.input-sources xkb-options ""
+}
 
+function dota_off(){
+	gsettings set org.gnome.desktop.input-sources xkb-options "['grp:caps_toggle']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['F1']"
+}
+
+alias k="kubectl"
+alias kc="kubectl-ctx"
+alias kns="kubectl-ns"
 alias g="git"
 alias ag="rg --colors 'match:bg:yellow' --colors 'match:fg:black' --colors 'match:style:nobold' --colors 'path:fg:green' --colors 'path:style:bold' --colors 'line:fg:yellow' --colors 'line:style:bold'"
 
@@ -150,4 +162,15 @@ bindkey "^?" backward-delete-char
 
 eval "$(starship init zsh)"
 
+export PATH="$HOME/bin:$PATH"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
