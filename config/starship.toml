@@ -8,7 +8,7 @@ pyenv_version_name = true
 pyenv_prefix = "[pyenv] "
 
 [cmd_duration]
-min_time = 2
+min_time = 1
 
 [directory]
 truncation_length = 8
@@ -52,9 +52,8 @@ prompt_order = [
 ]
 
 [time]
-disabled = false
+disabled = false 
 # format = "[ %T ]"
-utc_time_offset = -5
 
 [git_branch]
 disabled = false

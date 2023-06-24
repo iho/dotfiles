@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ihor/.oh-my-zsh"
+export ZSH="/home/ih/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -107,6 +107,8 @@ plugins=(
   cargo
   golang
   docker
+  podman
+  toolbox
   docker-compose
   kubectl
   kube-ps1
@@ -174,3 +176,5 @@ eval "$(pyenv virtualenv-init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+eval "$(starship init zsh)"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
