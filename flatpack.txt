@@ -6,10 +6,7 @@ com.slack.Slack
 com.spotify.Client                         
 com.valvesoftware.Steam                    
 com.visualstudio.code                      
-io.github.obiwankennedy.HotShots           
-io.github.openWMail.openWMail              
 nz.mega.MEGAsync                           
-org.flameshot.Flameshot                    
 org.gnome.Evince                           
 org.lamport.tla.toolbox                    
 org.libreoffice.LibreOffice                
