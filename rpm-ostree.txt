@@ -1,1 +1,1 @@
-alacritty docker docker-compose git gnome-system-monitor helm htop iotop ncdu neofetch net-tools ripgrep snapd vim wdisplays zsh
+alacritty docker docker-compose git gnome-system-monitor helm htop iotop ncdu neofetch net-tools ripgrep snapd vim wdisplays zsh hdparm tmux

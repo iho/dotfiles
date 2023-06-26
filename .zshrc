@@ -70,9 +70,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -101,34 +99,33 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 plugins=(
   fzf
-  pyenv 
   extract
 
-  cargo
   golang
   docker
-  podman
   toolbox
   docker-compose
   kubectl
   kube-ps1
   tmux
-  django
-  wakatime
   git
   vi-mode
 )
 
+source $ZSH/oh-my-zsh.sh
 export KEYTIMEOUT=1
 
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/home/ihor/go/bin
-export GOPATH=$HOME/go
+ # export PATH=$PATH:/usr/local/go/bin
+ # export PATH=$PATH:/home/ihor/go/bin
+ # export GOPATH=$HOME/go
 
 
 source $HOME/.cargo/env
-export PATH=$PATH:/home/ihor/bin
+export PATH=$PATH:$HOME/.arkade/bin/
+
+# export PATH=$PATH:/home/ihor/bin
+
 
 function dota_on(){
     gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
@@ -162,19 +159,10 @@ bindkey "^[[5~" up-line-or-history
 bindkey "^[[6~" down-line-or-history
 bindkey "^?" backward-delete-char
 
-eval "$(starship init zsh)"
-
 export PATH="$HOME/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
