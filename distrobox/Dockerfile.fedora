@@ -1,0 +1,8 @@
+FROM fedora:latest 
+RUN dnf update -y && dnf install -y gcc gcc-c++ make openssl-devel bzip2-devel libffi-devel zlib-devel readline-devel sqlite-devel wget curl zsh vim
+# RUN sudo dnf update vte-profile 
+RUN sudo dnf install "@Development Tools" zlib-devel bzip2 bzip2-devel readline-devel sqlite \
+    sqlite-devel openssl-devel xz xz-devel libffi-devel findutils tk-devel -y
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+RUN curl https://pyenv.run | bash
+RUN curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
