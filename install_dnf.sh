@@ -8,3 +8,5 @@ cargo install starship
 cargo install fd-find 
 cargo install ripgrep 
 cargo install amdgpu_top
+cargo install cargo-insta
+cargo install --locked difftastic
