@@ -1,8 +1,0 @@
-[ui]
-username = Ihor Horobets <ihor@horobets.me>
-[extensions]
-shelve=
-strip=
-purge=
-prompt=/home/ihor/.local/prompt.py
-ignore = ~/.globalhgignore

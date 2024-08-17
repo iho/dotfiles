@@ -58,7 +58,7 @@ docker-compose --version
 # neovim
 
 # ssh
-ssh-keygen -t rsa -b 4096 -C "ihorgorobets@gmail.com"
+ssh-keygen -t rsa -b 4096 -C ""
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 sudo apt-get install xclip
