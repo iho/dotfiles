@@ -10,3 +10,6 @@ cargo install ripgrep
 cargo install amdgpu_top
 cargo install cargo-insta
 cargo install --locked difftastic
+cargo install --locked zellij
+cargo install bacon
+cargo install gitui --locked

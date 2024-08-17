@@ -1,5 +1,5 @@
 make menuconfig
-make -j4
+make -j32
 emerge --ask @module-rebuild
 # make modules_prepare
 make modules_install
