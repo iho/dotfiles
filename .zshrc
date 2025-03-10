@@ -151,7 +151,6 @@ bindkey "^?" backward-delete-char
 export PATH="$HOME/bin:$PATH"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-export PATH="$HOME/.pyenv/bin:$PATH"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 eval "$(starship init zsh)"
